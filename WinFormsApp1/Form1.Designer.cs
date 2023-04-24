@@ -35,6 +35,7 @@
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             textBox7 = new TextBox();
+            button = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -86,11 +87,22 @@
             textBox7.Size = new Size(675, 23);
             textBox7.TabIndex = 6;
             // 
+            // button
+            // 
+            button.Location = new Point(270, 25);
+            button.Name = "button";
+            button.Size = new Size(262, 23);
+            button.TabIndex = 7;
+            button.Text = "bổ sung thêm nút bấm";
+            button.UseVisualStyleBackColor = true;
+            button.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
             Controls.Add(textBox5);
@@ -113,5 +125,6 @@
         private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
+        private Button button;
     }
 }
